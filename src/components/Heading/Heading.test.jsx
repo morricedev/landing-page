@@ -87,6 +87,11 @@ describe('<Heading />', () => {
     const { container } = renderTheme(<Heading as="h6">texto</Heading>);
     const h6 = container.querySelector('h6');
 
-    expect(h6.tagName.toLocaleLowerCase()).toBe('h6');
+    expect(h6.tagName.toLowerCase()).toBe('h6');
+  });
+  it('should match snapshot', () => {
+    const { container } = renderTheme(<Heading as="h6">texto</Heading>);
+
+    expect(container).toMatchSnapshot();
   });
 });
