@@ -92,6 +92,6 @@ describe('<Heading />', () => {
   it('should match snapshot', () => {
     const { container } = renderTheme(<Heading as="h6">texto</Heading>);
 
-    expect(container).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
