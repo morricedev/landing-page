@@ -4,11 +4,16 @@ import { renderTheme } from '../../styles/renderTheme';
 import { TextComponent } from '.';
 
 describe('<TextComponent />', () => {
-  it('should render a paragraph with text', () => {
-    const { container } = renderTheme(<TextComponent>Texto</TextComponent>);
-    const p = container.querySelector('p');
+  it('should render a paragraph ', () => {
+    const { container } = renderTheme(<TextComponent>{'<p>Texto</p>'}</TextComponent>);
 
+    const p = container.querySelector('p');
     expect(p.tagName.toLowerCase()).toBe('p');
+    expect(screen.getByText('Texto')).toBeInTheDocument();
+  });
+  it('should render a text ', () => {
+    renderTheme(<TextComponent>{'<p>Texto</p>'}</TextComponent>);
+
     expect(screen.getByText('Texto')).toBeInTheDocument();
   });
 
@@ -21,11 +26,11 @@ describe('<TextComponent />', () => {
       }
 
       <div>
-        <p
+        <div
           class="c0"
         >
           Texto
-        </p>
+        </div>
       </div>
     `);
   });
