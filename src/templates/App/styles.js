@@ -5,6 +5,4 @@ import styled from 'styled-components';
   `} */
 // background: ${(props) => props.background};
 
-export const Wrapper = styled.div`
-  background: ${({ theme }) => theme.colors.secondaryBg};
-`;
+export const Wrapper = styled.div``;
