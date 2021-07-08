@@ -7,7 +7,7 @@ export default {
     html: '<p><a href="https://github.com/morricedev">Feito com ❤ por Morrice</a></p>',
   },
   argTypes: {
-    html: { type: 'string' },
+    footerHtml: { type: 'string' },
   },
 };
 
