@@ -14,7 +14,7 @@ export const mapSections = (sections = []) => {
       }
 
       if (image_grid.length > 0) {
-        // return mapImageGrid(section);
+        return mapImageGrid(section);
       }
     }
 
@@ -58,18 +58,41 @@ export const mapSectionContent = (section = {}) => {
 
 export const mapTextGrid = (section = {}) => {
   const {
-    __component: component = '',
     title = '',
     description = '',
     metadata: { background = false, section_id: sectionId = '' } = false,
     text_grid: grid = [],
   } = section;
   return {
-    component,
+    component: 'section.section-grid-text',
     title,
     description,
     background,
     sectionId,
     grid,
+  };
+};
+
+export const mapImageGrid = (section = {}) => {
+  const {
+    title = '',
+    description = '',
+    metadata: { background = false, section_id: sectionId = '' } = false,
+    image_grid: grid = [],
+  } = section;
+
+  return {
+    component: 'section.section-grid-image',
+    title,
+    description,
+    background,
+    sectionId,
+    grid: grid.map((img) => {
+      const { image: { url: srcImg = '', alternativeText: altText = '' } = '' } = img;
+      return {
+        srcImg,
+        altText,
+      };
+    }),
   };
 };
