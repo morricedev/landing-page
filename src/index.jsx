@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 import { GlobalStyles } from './styles/globalStyles';
@@ -10,7 +11,11 @@ ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Home />
+      <BrowserRouter>
+        <Switch>
+          <Route to="*" component={Home} />
+        </Switch>
+      </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root'),
