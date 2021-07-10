@@ -13,6 +13,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [React](https://reactjs.org)
 - [Storybook](https://storybook.js.org/)
 - [Strapi](https://strapi.io/)
+- [Jest](https://jestjs.io/)
 
 ## 🚀 Como executar
 
