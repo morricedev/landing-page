@@ -4,6 +4,7 @@ export const Container = styled.section`
   ${() => css`
     max-width: 58rem;
     margin: 0 auto;
+    overflow-wrap: break-word;
   `}
 `;
 
