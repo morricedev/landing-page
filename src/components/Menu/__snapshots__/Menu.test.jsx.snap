@@ -196,7 +196,7 @@ exports[`<Menu /> should not render links 1`] = `
       />
     </svg>
   </button>
-  <div
+  <header
     class="c2"
   >
     <div
@@ -221,7 +221,7 @@ exports[`<Menu /> should not render links 1`] = `
         />
       </div>
     </div>
-  </div>
+  </header>
 </div>
 `;
 
@@ -448,7 +448,7 @@ exports[`<Menu /> should render Logo and Main Menu Nav 1`] = `
       />
     </svg>
   </button>
-  <div
+  <header
     class="c2"
   >
     <div
@@ -544,6 +544,6 @@ exports[`<Menu /> should render Logo and Main Menu Nav 1`] = `
         </nav>
       </div>
     </div>
-  </div>
+  </header>
 </div>
 `;

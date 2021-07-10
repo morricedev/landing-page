@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.section`
   ${() => css`
     max-width: 58rem;
     margin: 0 auto;

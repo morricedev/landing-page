@@ -77,7 +77,7 @@ exports[`<GridTwoColumns /> should render two columns grid 1`] = `
     <div
       class="c1"
     >
-      <div
+      <section
         class="c2"
       >
         <div
@@ -103,7 +103,7 @@ exports[`<GridTwoColumns /> should render two columns grid 1`] = `
             src="assets/images/javascript.svg"
           />
         </p>
-      </div>
+      </section>
     </div>
   </div>
 </div>
