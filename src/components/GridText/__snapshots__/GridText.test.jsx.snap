@@ -88,7 +88,7 @@ exports[`<GridText /> should render GridText with background 1`] = `
     <div
       class="c1"
     >
-      <div
+      <section
         class="c2"
       >
         <h2
@@ -147,7 +147,7 @@ exports[`<GridText /> should render GridText with background 1`] = `
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </div>
 </div>
@@ -241,7 +241,7 @@ exports[`<GridText /> should render GridText without background 1`] = `
     <div
       class="c1"
     >
-      <div
+      <section
         class="c2"
       >
         <h2
@@ -300,7 +300,7 @@ exports[`<GridText /> should render GridText without background 1`] = `
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </div>
 </div>

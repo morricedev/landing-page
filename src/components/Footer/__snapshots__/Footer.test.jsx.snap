@@ -33,7 +33,7 @@ exports[`<Footer /> should render footer 1`] = `
 }
 
 <div>
-  <div
+  <footer
     class="c0"
   >
     <div
@@ -47,6 +47,6 @@ exports[`<Footer /> should render footer 1`] = `
         </h1>
       </div>
     </div>
-  </div>
+  </footer>
 </div>
 `;
